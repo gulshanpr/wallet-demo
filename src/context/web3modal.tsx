@@ -3,7 +3,7 @@
 import { createWeb3Modal, defaultConfig } from '@web3modal/ethers/react'
 import { ReactNode } from 'react';
 
-const projectId = process.env.NEXT_PUBLIC_PROJECT_ID || '';
+const projectId: any = process.env.NEXT_PUBLIC_PROJECT_ID || '';
 
 const mainnet = {
   chainId: 1,
@@ -17,8 +17,8 @@ const mainnet = {
 const metadata = {
   name: 'Create wallet demo',
   description: 'create wallet demo of my talk at college',
-  url: 'https://mywebsite.com',
-  icons: ['https://avatars.mywebsite.com/']
+  url: 'https://wallet-creation-demo.vercel.app/',
+  icons: ['https://localhost:3000/']
 }
 
 const ethersConfig = defaultConfig({
